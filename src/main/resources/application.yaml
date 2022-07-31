@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: demo
+
+  h2:
+    console:
+      enabled: true
+      
+  datasource:
+    url: jdbc:h2:mem:demo
+
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
